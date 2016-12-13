@@ -1,0 +1,55 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+div#background-cover {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+div#background-cover:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	background: rgba(127, 127, 127, 0.5);
+	background-image: radial-gradient(#222222 50%, transparent 60%);
+	background-size: 2px 2px;
+}
+div#splash {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
+
+video#background-video {
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -2;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    // background: url(polina.jpg) no-repeat;
+    // background-size: cover; 
+
+    -webkit-filter: blur(7px);
+	-moz-filter: blur(7px);
+	-o-filter: blur(7px);
+	-ms-filter: blur(7px);
+	filter: blur(7px);
+}
