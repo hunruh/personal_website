@@ -1,25 +1,71 @@
 body {
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Source Sans Pro', sans-serif; }
 
-div#background-cover {
-  position: absolute;
+.nopoint {
+  cursor: default; }
+
+.unselectable {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  user-select: none; }
+
+a.button {
+  display: inline-block;
+  border: 1px solid #FE7676;
+  border-radius: 8px;
+  box-shadow: 0px 1px rgba(70, 70, 70, 0.3);
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 5px 17px 7px 17px;
+  margin-right: 8px;
+  margin-left: 8px;
+  transition: ease-in-out 0.15s; }
+
+a.button:hover {
+  color: #FE7676; }
+
+div.content-box {
+  position: relative;
   top: 0px;
-  left: 0px;
+  left: 50%;
+  float: left;
+  -ms-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  max-width: 900px;
+  height: 100%; }
+
+div#splash-box {
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-shadow: 0px 2px rgba(70, 70, 70, 0.3); }
+
+div#identity {
+  color: white;
+  line-height: 1.25; }
+
+div#identity span#name {
+  font-family: 'Oswald', sans-serif;
+  font-size: 80px; }
+
+div#identity span#description {
+  padding-left: 4px;
+  font-size: 30px;
+  font-weight: 200; }
+
+div#navigation {
+  position: relative;
   width: 100%;
-  height: 100%;
-  z-index: -1; }
-
-div#background-cover:after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  bottom: 0px;
-  right: 0px;
-  background: rgba(127, 127, 127, 0.5);
-  background-image: radial-gradient(#222222 50%, transparent 60%);
-  background-size: 2px 2px; }
+  text-align: center;
+  top: 10vh; }
 
 div#splash {
   position: relative;
@@ -29,7 +75,16 @@ div#splash {
   height: 100vh;
   overflow: hidden; }
 
-video#background-video {
+div#splash div#background-cover {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: rgba(50, 50, 50, 0.7); }
+
+div#splash video#background-video {
   position: absolute;
   top: 50%;
   left: 50%;

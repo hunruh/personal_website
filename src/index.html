@@ -10,11 +10,14 @@
         <link rel="apple-touch-icon" href="imgs/icons/apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Oswald" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300|Oswald" rel="stylesheet">
 
         <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/boilerplate.css">
         <link rel="stylesheet" href="css/index.css">
         <script src="scripts/vendor/modernizr-2.8.3.min.js"></script>
+
+        <title>Harrison Unruh</title>
     </head>
     <body>
         <!--[if lte IE 9]>
@@ -23,14 +26,27 @@
 
         <!-- Add your site or application content here -->
         <div id="splash">
-            <div id="background-cover"></div>
             <video loop muted autoplay poster="imgs/videoframe.jpg" id="background-video">
-                <!-- <source src="video/big_buck_bunny.webm" type="video/webm"> -->
+                <source src="video/big_buck_bunny.webm" type="video/webm">
                 <source src="resources/rowing.mp4" type="video/mp4">
                 <!-- <source src="video/big_buck_bunny.ogv" type="video/ogg"> -->
             </video>
+            <div id="background-cover"></div>
 
-            <p>Hello world! This is HTML5 Boilerplate. Harriso asdfaasfdn</p>
+            <div class="content-box">
+                <div id="splash-box" class="unselectable">
+                    <div id="identity" class="nopoint">
+                        <span id="name">HARRISON<br >UNRUH</span>
+                        <span id="description"><br >Designer, Software Developer</span>
+                    </div>
+
+                    <div id="navigation">
+                        <a class="button" href="#">About</a>
+                        <a class="button" href="#">Work</a>
+                        <a class="button" href="#">Contact</a>
+                    </div>
+                </div>
+            </div>
         </div>
         <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
         <script src="scripts/plugins.js"></script>
