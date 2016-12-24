@@ -4,20 +4,21 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">    
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
 
         <link rel="apple-touch-icon" href="imgs/icons/apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
-        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300|Oswald" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600,400,300|Oswald" rel="stylesheet">
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/boilerplate.css">
+        <link rel="stylesheet" href="css/skeleton.css">
         <link rel="stylesheet" href="css/index.css">
         <script src="scripts/vendor/modernizr-2.8.3.min.js"></script>
 
-        <title>Harrison Unruh</title>
+        <title>harrison.unruh</title>
     </head>
     <body>
         <!--[if lte IE 9]>
@@ -25,18 +26,19 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <div id="splash">
+        <div class="section" id="splash">
             <video loop muted autoplay poster="imgs/videoframe.jpg" id="background-video">
                 <source src="video/big_buck_bunny.webm" type="video/webm">
-                <source src="resources/rowing.mp4" type="video/mp4">
+                <source src="resources/rowingcompressed.mp4" type="video/mp4">
                 <!-- <source src="video/big_buck_bunny.ogv" type="video/ogg"> -->
             </video>
             <div id="background-cover"></div>
 
-            <div class="content-box">
-                <div id="splash-box" class="unselectable">
+            <!-- Splash -->
+            <div class="container">
+                <div class="unselectable" id="splash-box">
                     <div id="identity" class="nopoint">
-                        <span id="name">HARRISON<br >UNRUH</span>
+                        <span id="name">Harrison<br >Unruh</span>
                         <span id="description"><br >Designer, Software Developer</span>
                     </div>
 
@@ -48,7 +50,76 @@
                 </div>
             </div>
         </div>
+        <!-- About -->
+        <div class="section" id="about">
+            <div class="container">
+                <h1>About Me</h1>
+                <p><strong>Harrison specializes in transforming ideas and visions into code.</strong><br >
+                   His work in software development  is influenced by his background
+                   in visual design and analytical thinking (tuned by years of
+                   competitive chess). He has extensive experience with collaboration
+                   from years of involvement with teams, academic and athletic, as a
+                   leader and as a follower.</p>
+                
+                <div class="skills">
+                    <h2>Skills</h2>
+                    <div class="row">
+                        <div class="one-half column">
+                            <span class="skill-hdr">Java</span><span class="skill-pnts" data-val=10></span>
+                        </div>
+                        <div class="one-half column">
+                            <span class="skill-hdr">OCaml</span><span class="skill-pnts" data-val=8></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="one-half column">
+                            <span class="skill-hdr">Python</span><span class="skill-pnts" data-val=9></span>
+                        </div>
+                        <div class="one-half column">
+                            <span class="skill-hdr">Ruby on Rails</span><span class="skill-pnts" data-val=6></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="one-half column">
+                            <span class="skill-hdr">Systems Programming</span><span class="skill-pnts" data-val=6></span>
+                        </div>
+                        <div class="one-half column">
+                            <span class="skill-hdr">Visual Design</span><span class="skill-pnts" data-val=8></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="one-half column">
+                            <span class="skill-hdr">Web Development</span><span class="skill-pnts" data-val=10></span>
+                        </div>
+                        <div class="one-half column">
+                            <span class="skill-hdr">Teaching</span><span class="skill-pnts" data-val=7></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills">
+                    <h2>Lifetime Stats</h2>
+                    <div class="row">
+                        <div class="one-half column stat">
+                            <img class="stat-icon" src="imgs/chess.png"><span class="stat-hdr">Chess Tournaments Played</span><span class="stat-num" data-val="72" data-visible="false">0</span>
+                        </div>
+                        <div class="one-half column stat">
+                            <img class="stat-icon" src="imgs/rowing.png"><span class="stat-hdr">Meters Rowed</span><span class="stat-num" data-val="3000000+" data-visible="false">0</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="one-half column stat">
+                            <img class="stat-icon" src="imgs/code.png"><span class="stat-hdr">Lines of Code Written</span><span class="stat-num" data-val="500000+" data-visible="false">0</span>
+                        </div>
+                        <div class="one-half column stat">
+                            <img class="stat-icon" src="imgs/skiing.png"><span class="stat-hdr">Mountains Skied</span><span class="stat-num" data-val="8" data-visible="false">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <script src="scripts/vendor/animate-number.min.js"></script>
         <script src="scripts/plugins.js"></script>
         <script src="scripts/main.js"></script>
     </body>

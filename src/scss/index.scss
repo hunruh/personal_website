@@ -1,9 +1,15 @@
+$light-grey: #CCCCCC;
+$grey: #595959;
 $pink: #FE7676;
 
 body {
 	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
 }
 
+.empty {
+	content: " ";
+}
 .nopoint {
 	cursor: default;
 }
@@ -32,17 +38,124 @@ a.button:hover {
 	color: $pink;
 }
 
-div.content-box {
+div.section {
 	position: relative;
 	top: 0px;
-	left: 50%;
+	left: 0px;
+	width: 100%;
+	// height: 100%;
+	// clear:both
+	// overflow: hidden;
+}
+div.skills {
+	position: relative;
+	top: 60px;
+	left: 0px;
+	width: 100%;
+	color: $grey;
+	margin-bottom: 60px;
+}
+div.skills div.column {
+	border-bottom: 1px solid #EEEEEE;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	margin-bottom: -1px;
+	text-align: center;
+}
+div#about img.stat-icon {
+	display: block;
 	float: left;
+	width: 48px;
+	height: 48px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+div#about p {
+	position: relative;
+	top: 20px;
+	left: 50%;
 	-ms-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-	max-width: 900px;
-	height: 100%;
+	max-width: 550px;
+	color: $grey;
+	font-size: 20px;
+	text-align: center;
+}
+div#about span.skill-hdr {
+	display: inline-block;
+	margin-left: 5px;
+	margin-right: 10px;
+	text-align: center;
+	text-transform: uppercase;
+	width: 48%;
+}
+div#about span.skill-pnts {
+	display: inline-block;
+	// white-space: nowrap;
+	height: 1.1em;
+	// text-align: center;
+	
+}
+div#about span.skill-pnts span {
+	// white-space: nowrap;
+	// float: right;
+	display: inline-block;
+	width: 7px;
+	height: 7px;
+	margin: 6px 3px 0px 3px;
+	border-radius: 7px;
+
+	opacity: 0;
+}
+div#about span.skill-pnts span.pnt {
+	border: 2px solid $pink;
+}
+div#about span.skill-pnts span.no-pnt {
+	border: 2px solid $light-grey;
+}
+div#about span.stat-hdr {
+	position: relative;
+	float: left;
+	top: 14px;
+	padding-right: 20px;
+	text-transform: uppercase;
+}
+div#about span.stat-num {
+	position: relative;
+	float: right;
+	right: 10px;
+	top: 7px;
+	padding-bottom: 10px;
+	color: $pink;
+	font-size: 24px;
+	font-weight: 600;
+}
+div#identity {
+	text-align: center;
+	color: white;
+	line-height: 1.25;
+	text-shadow: 0px 2px rgba(70, 70, 70, 0.3);
+}
+div#identity span#name {
+	font-family: 'Oswald', sans-serif;
+	font-size: 80px;
+	text-transform: uppercase;
+}
+div#identity span#description {
+	padding-left: 4px;
+	font-size: 30px;
+	font-weight: 200;
+}
+div#navigation {
+	text-align: center;
+	margin-top: 10vh;
+	text-shadow: 0px 2px rgba(70, 70, 70, 0.3);
+}
+div#splash {
+	height: 100vh;
+	overflow: hidden;
 }
 div#splash-box {
 	position: relative;
@@ -51,34 +164,6 @@ div#splash-box {
     -moz-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    text-shadow: 0px 2px rgba(70, 70, 70, 0.3);
-}
-div#identity {
-	color: white;
-	line-height: 1.25;
-}
-div#identity span#name {
-	font-family: 'Oswald', sans-serif;
-	font-size: 80px;
-}
-div#identity span#description {
-	padding-left: 4px;
-	font-size: 30px;
-	font-weight: 200;
-}
-div#navigation {
-	position: relative;
-	width: 100%;
-	text-align: center;
-	top: 10vh;
-}
-div#splash {
-	position: relative;
-	top: 0px;
-	left: 0px;
-	width: 100%;
-	height: 100vh;
-	overflow: hidden;
 }
 div#splash div#background-cover {
 	position: absolute;
@@ -105,9 +190,31 @@ div#splash video#background-video {
     // background: url(polina.jpg) no-repeat;
     // background-size: cover; 
 
-    -webkit-filter: blur(7px);
-	-moz-filter: blur(7px);
-	-o-filter: blur(7px);
-	-ms-filter: blur(7px);
-	filter: blur(7px);
+ //    -webkit-filter: blur(7px);
+	// -moz-filter: blur(7px);
+	// -o-filter: blur(7px);
+	// -ms-filter: blur(7px);
+	// filter: blur(7px);
+}
+
+h1 {
+	color: $grey;
+	font-family: 'Oswald', sans-serif;
+	font-size: 60px;
+	font-weight: 400;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h2 {
+	color: $grey;
+	font-family: 'Oswald', sans-serif;
+	font-size: 25px;
+	font-weight: 400;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+strong {
+	font-weight: 400;
 }
