@@ -101,49 +101,57 @@ div#contact {
   div#contact div#direct {
     color: #595959;
     margin-top: 50px; }
-    div#contact div#direct form#direct-form button {
+    div#contact div#direct form#direct-form {
       position: relative;
       left: 50%;
       -ms-transform: translateX(-50%);
       -moz-transform: translateX(-50%);
       -webkit-transform: translateX(-50%);
       transform: translateX(-50%);
-      background: transparent;
-      border: 2px solid #FE7676;
-      border-radius: 8px;
-      padding: 8px 25px 8px 25px;
-      transition: ease-in-out 0.15s;
-      font-size: 18px; }
-    div#contact div#direct form#direct-form button:hover {
-      color: #FE7676; }
-    div#contact div#direct form#direct-form input {
-      position: relative;
-      top: -34px;
-      width: 100%;
-      background: transparent;
-      border: 0px;
-      border-bottom: 2px solid #FE7676;
-      border-radius: 0px;
-      padding-left: 40px;
-      margin: 0px; }
-    div#contact div#direct form#direct-form img {
-      position: relative;
-      top: 0px;
-      width: 30px;
-      height: 30px; }
-    div#contact div#direct form#direct-form textarea {
-      position: relative;
-      top: -34px;
-      width: 100%;
-      resize: none;
-      background: transparent;
-      border: 0px;
-      border-bottom: 2px solid #FE7676;
-      border-radius: 0px;
-      padding-left: 40px;
-      overflow-y: scroll; }
-    div#contact div#direct form#direct-form span {
-      display: block; }
+      max-width: 550px; }
+      div#contact div#direct form#direct-form button {
+        position: relative;
+        left: 50%;
+        -ms-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        background: transparent;
+        border: 2px solid #FE7676;
+        border-radius: 8px;
+        padding: 8px 25px 8px 25px;
+        transition: ease-in-out 0.15s;
+        font-size: 18px; }
+      div#contact div#direct form#direct-form button:hover {
+        color: #FE7676; }
+      div#contact div#direct form#direct-form input {
+        position: relative;
+        top: -34px;
+        width: 100%;
+        background: transparent;
+        border: 0px;
+        border-bottom: 2px solid #FE7676;
+        border-radius: 0px;
+        padding-left: 40px;
+        margin: 0px; }
+      div#contact div#direct form#direct-form img {
+        position: relative;
+        top: 0px;
+        width: 30px;
+        height: 30px; }
+      div#contact div#direct form#direct-form textarea {
+        position: relative;
+        top: -34px;
+        width: 100%;
+        resize: none;
+        background: transparent;
+        border: 0px;
+        border-bottom: 2px solid #FE7676;
+        border-radius: 0px;
+        padding-left: 40px;
+        overflow-y: scroll; }
+      div#contact div#direct form#direct-form span {
+        display: block; }
     div#contact div#direct p {
       text-align: center; }
   div#contact div#email {
