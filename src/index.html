@@ -16,14 +16,33 @@
         <link rel="stylesheet" href="css/boilerplate.css">
         <link rel="stylesheet" href="css/skeleton.css">
         <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/vendor/hamburgers.css">
         <script src="scripts/vendor/modernizr-2.8.3.min.js"></script>
 
         <title>harrison.unruh</title>
     </head>
     <body>
-        <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
+        <header>
+            <div class="container">
+                <div id="nav-mobile">
+                    <span id="watermark" class="unselectable">H.Unruh</span>
+                    <div class="hamburger hamburger--squeeze" type="button">
+                        <div class="hamburger-box">
+                            <div class="hamburger-inner"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="nav-links">
+                    <div class="row unselectable">
+                        <div class="offset-by-one two columns"><a id="name" class="nav-button" data-href="splash">H.Unruh</a></div>
+                        <div class="two columns"><a id="nav-about" class="hdr-nav nav-button" data-href="about">About</a></div>
+                        <div class="two columns"><a id="nav-work" class="hdr-nav nav-button" data-href="work">Experience</a></div>
+                        <div class="two columns"><a id="nav-projects" class="hdr-nav nav-button" data-href="projects">Projects</a></div>
+                        <div class="two columns"><a id="nav-contact" class="hdr-nav nav-button" data-href="contact">Contact</a></div>
+                    </div>
+                </div>
+            </div>
+        </header>
 
         <!-- Add your site or application content here -->
         <div class="section" id="splash">
@@ -43,9 +62,10 @@
                     </div>
 
                     <div id="navigation">
-                        <a class="button" href="#">About</a>
-                        <a class="button" href="#">Work</a>
-                        <a class="button" href="#">Contact</a>
+                        <a class="nav-button" data-href="about">About</a>
+                        <a class="nav-button" data-href="work">Experience</a>
+                        <a class="nav-button" data-href="projects">Projects</a>
+                        <a class="nav-button" data-href="contact">Contact</a>
                     </div>
                 </div>
             </div>
@@ -53,7 +73,7 @@
         <!-- About -->
         <div class="section" id="about">
             <div class="container">
-                <h1>About Me</h1>
+                <h1 class="unselectable">About Me</h1>
                 <p><strong>Harrison specializes in transforming ideas and visions into code.</strong><br >
                    His work in software development  is influenced by his background
                    in visual design and analytical thinking (tuned by years of
@@ -62,7 +82,7 @@
                    leader and as a follower.</p>
                 
                 <div class="skills">
-                    <h2>Skills</h2>
+                    <h2 class="unselectable">Skills</h2>
                     <div class="row">
                         <div class="one-half column">
                             <span class="skill-hdr">Java</span><span class="skill-pnts" data-val=10></span>
@@ -98,22 +118,175 @@
                 </div>
 
                 <div class="skills">
-                    <h2>Lifetime Stats</h2>
+                    <h2 class="unselectable">Lifetime Stats</h2>
                     <div class="row">
                         <div class="one-half column stat">
-                            <img class="stat-icon" src="imgs/chess.png"><span class="stat-hdr">Chess Tournaments Played</span><span class="stat-num" data-val="72" data-visible="false">0</span>
+                            <img class="stat-icon" src="imgs/chess.png"><span class="stat-hdr">Chess Tournaments Played<br ></span><span class="stat-num" data-val="72" data-visible="false">0</span>
                         </div>
                         <div class="one-half column stat">
-                            <img class="stat-icon" src="imgs/rowing.png"><span class="stat-hdr">Meters Rowed</span><span class="stat-num" data-val="3000000+" data-visible="false">0</span>
+                            <img class="stat-icon" src="imgs/rowing.png"><span class="stat-hdr">Meters Rowed<br ></span><span class="stat-num" data-val="3000000+" data-visible="false">0</span>
                         </div>
                     </div>
                     <div class="row">
                         <div class="one-half column stat">
-                            <img class="stat-icon" src="imgs/code.png"><span class="stat-hdr">Lines of Code Written</span><span class="stat-num" data-val="500000+" data-visible="false">0</span>
+                            <img class="stat-icon" src="imgs/code.png"><span class="stat-hdr">Lines of Code Written<br ></span><span class="stat-num" data-val="500000+" data-visible="false">0</span>
                         </div>
                         <div class="one-half column stat">
-                            <img class="stat-icon" src="imgs/skiing.png"><span class="stat-hdr">Mountains Skied</span><span class="stat-num" data-val="8" data-visible="false">0</span>
+                            <img class="stat-icon" src="imgs/skiing.png"><span class="stat-hdr">Mountains Skied<br ></span><span class="stat-num" data-val="8" data-visible="false">0</span>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Experience -->
+        <div class="section" id="work">
+            <div class="container">
+                <h1 class="unselectable">Experience</h1>
+                <div id="education">
+                    <span class="date">Expected graduation 2019</span>
+                    <span class="hdr">Cornell University</span>
+                    <span class="title">College of Arts & Sciences</span>
+                    <span><strong>Computer Science</strong><span class="divider">//</span>Linguistics</span>
+                    <span><i>Focus on Artificial Intelligence and Human-Language Technologies</i></span>
+                </div>
+                <div id="timeline">
+                    <div class="row">
+                        <div class="one-half column left">
+                            <span class="date">Jun 2016 - Aug 2016</span>
+                            <span class="hdr">RallyMe</span>
+                            <span class="title">Software Development Intern</span>
+                            <span class="desc">Worked to expand the company’s testing framework and implemented an updated analytics system.</span>
+                            <div class="time-dot"></div>
+                        </div>
+                        <div class="one-half column unselectable">&nbsp;</div>
+                    </div>
+                    <div class="row">
+                        <div class="one-half column unselectable">&nbsp;</div>
+                        <div class="one-half column right">
+                            <span class="date">Sep 2012 - Mar 2015</span>
+                            <span class="hdr">Chess Coach</span>
+                            <span class="desc">Taught 3 private students, all of whom placed within the top 10 in their grade in the 2015 state championships. Coached 2 elementary school teams which scored 7th and 9th place in the 2015 state championships.</span>
+                            <div class="time-dot"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="one-half column left">
+                            <span class="date">Summers 2012 - 2015</span>
+                            <span class="hdr">G.R.E.A.T. Camps, University of Utah</span>
+                            <span class="title">Computer Science Instructor</span>
+                            <span class="desc">Taught summer camps to over 80 middle school students over 5 weeks each summer. Coached students on the FIRST Lego League robotics competition emphasizing both programming and robot design. Introduced students to coding with the Processing language.</span>
+                            <div class="time-dot"></div>
+                        </div>
+                        <div class="one-half column unselectable">&nbsp;</div>
+                    </div>
+                    <div class="row">
+                        <div class="one-half column unselectable">&nbsp;</div>
+                        <div class="one-half column right">
+                            <span class="date">Summers  2013 - 2014</span>
+                            <span class="hdr">Scientific Computing and Imaging Institute</span>
+                            <span class="title">Data Analytics Intern</span>
+                            <span class="desc">Used data segmentation and machine learning to predict the presence of Alzheimer’s disease and autism in the brain. Researched and analyzed three-dimensional data sets for the Cat's Eye Nebula and Supernova Remant SNR 0509-67.5.</span>
+                            <div class="time-dot"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="section" id="projects">
+            <div class="container">
+                <h1 class="unselectable">Projects</h1>
+                <div id="alerion" class="project-exp">
+                    <div class="return unselectable">
+                        <span class="shadow"></span>
+                        <img src="imgs/return.png"></div>
+                    <span class="hdr">Alerion Website<span class="divider">//</span><a href="http://www.alerion.com">Project link</a></span>
+                    <span class="desc">A complete redesign and build from scratch of the website for Alerion Capital Group</span>
+                    <span>Lorem ipsum dolor sit amet, metus ipsum wisi sapien elit wisi, pellentesque suscipit venenatis in integer rhoncus auctor, ultricies vitae nibh eleifend ante mollis nec, enim lorem hymenaeos quisque molestie. Commodo a habitant, at pellentesque malesuada ac, nulla nec orci odio eu tempus tincidunt, eu ac, posuere wisi. Sapien nulla quis. Risus dolor justo laoreet nibh urna ligula, gravida in quis lacus nam, et lacinia, sed rutrum erat morbi vestibulum.</span>
+                    <span><img src="imgs/alerion.png">
+                </div>
+                <div id="seedmap" class="project-exp">
+                    <div class="return unselectable">
+                        <span class="shadow"></span>
+                        <img src="imgs/return.png"></div>
+                    <span class="hdr">SeedMap<span class="divider">//</span><a href="http://www.alerion.com">Project link</a></span>
+                    <span class="desc">A Java application to simplify the registration process for the Ithaca Community Gardens</span>
+                    <span>Lorem ipsum dolor sit amet, metus ipsum wisi sapien elit wisi, pellentesque suscipit venenatis in integer rhoncus auctor, ultricies vitae nibh eleifend ante mollis nec, enim lorem hymenaeos quisque molestie. Commodo a habitant, at pellentesque malesuada ac, nulla nec orci odio eu tempus tincidunt, eu ac, posuere wisi. Sapien nulla quis. Risus dolor justo laoreet nibh urna ligula, gravida in quis lacus nam, et lacinia, sed rutrum erat morbi vestibulum.</span>
+                    <span><img src="imgs/alerion.png">
+                </div>
+                <div id="jade" class="project-exp">
+                    <div class="return unselectable">
+                        <span class="shadow"></span>
+                        <img src="imgs/return.png"></div>
+                    <span class="hdr">JADE<span class="divider">//</span><a href="http://www.alerion.com">Project link</a></span>
+                    <span class="desc">A Flask web application to improve the speed of human trafficking reporting by the New York Police Department</span>
+                    <span>Lorem ipsum dolor sit amet, metus ipsum wisi sapien elit wisi, pellentesque suscipit venenatis in integer rhoncus auctor, ultricies vitae nibh eleifend ante mollis nec, enim lorem hymenaeos quisque molestie. Commodo a habitant, at pellentesque malesuada ac, nulla nec orci odio eu tempus tincidunt, eu ac, posuere wisi. Sapien nulla quis. Risus dolor justo laoreet nibh urna ligula, gravida in quis lacus nam, et lacinia, sed rutrum erat morbi vestibulum.</span>
+                    <span><img src="imgs/alerion.png">
+                </div>
+                <div id="project-grid" class="unselectable">
+                    <div class="row">
+                        <div class="one-third column project" style="background-image: url('imgs/alerion.png')" data-id="alerion">
+                            <div class="overlay"></div>
+                            <div class="content">
+                                <span class="hdr">Alerion Website</span>
+                                <span class="desc">A complete redesign and build from scratch of the website for Alerion Capital Group</span>
+                            </div>
+                        </div>
+                        <div id="asdfa" class="one-third column project" style="background-image: url('imgs/seedmap.jpg')" data-id="seedmap">
+                            <div class="overlay"></div>
+                            <div class="content">
+                                <span class="hdr">SeedMap</span>
+                                <span class="desc">A Java application to simplify the registration process for the Ithaca Community Gardens</span>
+                            </div>
+                        </div>
+                        <div class="one-third column project" style="background-image: url('imgs/jade.png')" data-id="jade">
+                            <div class="overlay"></div>
+                            <div class="content">
+                                <span class="hdr">JADE</span>
+                                <span class="desc">A Flask web application to improve the speed of human trafficking reporting by the New York Police Department</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="section" id="contact">
+            <div class="container">
+                <h1 class="unselectable">Contact</h1>
+                <div id="social-media">
+                    <a href="https://github.com/hunruh"><span class="shadow"></span><img src="imgs/github.png"></a>
+                    <a href="http://www.linkedin.com/in/harrisonunruh/"><span class="shadow"></span><img src="imgs/linkedin.png"></a>
+                    <a href="http://www.instagram.com/harrison.u/"><span class="shadow"></span><img src="imgs/instagram.png"></a>
+                </div>
+                <div id="email"><a href="mailto:harrison.unruh@gmail.com">harrison.unruh@gmail.com</a></div>
+                <div id="direct">
+                    <div class="unselectable" id="inquiry-desc">Or submit your inquiry directly</div>
+
+                    <p>I'm happy to discuss freelance work.</p>
+
+                    <form id="direct-form">
+                        <span><img src="imgs/name.png"><input type="text" placeholder="Name"></span>
+                        <span><img src="imgs/email.png"><input type="email" placeholder="Email"></span>
+                        <span><img src="imgs/message.png"><textarea name="message" placeholder="Please enter your inquiry"></textarea></span>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Credits -->
+        <div class="section" id="credits">
+            <div class="container">
+                <div class="row">
+                    <div class="one-half column left">
+                        Copyright 2017, Harrison Unruh
+                    </div>
+                    <div class="one-half column right">
+                        Github, Instagram, and LinkedIn are copyrights of their respective owners. Icons by <a href="http://icons8.com">Icons8</a>.
                     </div>
                 </div>
             </div>
