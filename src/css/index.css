@@ -97,7 +97,7 @@ div#about span.stat-num {
   text-align: center; }
 
 div#contact {
-  background: #EEEEEE; }
+  background: #F8F8F8; }
   div#contact div#direct {
     color: #595959;
     margin-top: 50px; }
@@ -333,9 +333,15 @@ div#projects div.project-exp {
     transform: scale(1.15ad 1.1);
     box-shadow: 0px 0px 0px 1px #fe7676; }
   div#projects div.project-exp img {
+    position: relative;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
     margin-top: 15px;
     margin-bottom: 35px;
-    width: 100%; }
+    max-width: 100%; }
   div#projects div.project-exp span {
     display: block;
     color: #595959;
@@ -425,7 +431,7 @@ div#splash-box {
   transform: translateY(-50%); }
 
 div#work {
-  background: #EEEEEE; }
+  background: #F8F8F8; }
   div#work div#education {
     position: relative;
     top: 25px;

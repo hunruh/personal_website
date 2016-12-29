@@ -1,4 +1,4 @@
-$back-grey: #EEEEEE;
+$back-grey: #F8F8F8;
 $light-grey: #CCCCCC;
 $mid-grey: #888888;
 $grey: #595959;
@@ -399,9 +399,15 @@ div#projects {
 			}
 		}
 		img {
+			position: relative;
+			left: 50%;
+			-ms-transform: translateX(-50%);
+		    -moz-transform: translateX(-50%);
+		    -webkit-transform: translateX(-50%);
+		    transform: translateX(-50%);
 			margin-top: 15px;
 			margin-bottom: 35px;
-			width: 100%;
+			max-width: 100%;
 		}
 		span {
 			display: block;
