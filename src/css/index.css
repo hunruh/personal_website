@@ -154,6 +154,8 @@ div#contact {
         display: block; }
     div#contact div#direct p {
       text-align: center; }
+    div#contact div#direct p#inquiry-notify {
+      display: none; }
   div#contact div#email {
     position: relative;
     cursor: pointer;
@@ -505,6 +507,16 @@ div#work {
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
     text-transform: uppercase; }
+    div#work span.hdr a {
+      position: relative;
+      left: 7px;
+      bottom: 2px;
+      padding-right: 8px;
+      color: #888888;
+      text-decoration: none;
+      transition: ease-in-out 0.15s; }
+    div#work span.hdr a:hover {
+      color: #FE7676; }
   div#work span.title {
     text-transform: uppercase; }
 

@@ -112,6 +112,9 @@ $(document).ready( function() {
 			$('#nav-links').slideDown(200);
 		}
 	});
+	$('#inquiry-submit').click(function() {
+			$('#inquiry-notify').slideDown();
+	});
 	$('.nav-button').click(function() {
 		var offset = $('header').height();
 		if($(window).width() < 550) {

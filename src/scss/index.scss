@@ -183,6 +183,9 @@ div#contact {
 		p {
 			text-align: center;
 		}
+		p#inquiry-notify {
+			display: none;
+		}
 	}
 	div#email {
 		position: relative;
@@ -620,6 +623,19 @@ div#work {
 		font-family: 'Oswald', sans-serif;
 		font-size: 20px;
 		text-transform: uppercase;
+
+		a {
+			position: relative;
+			left: 7px;
+			bottom: 2px;
+			padding-right: 8px;
+			color: $mid-grey;
+			text-decoration: none;
+			transition: ease-in-out 0.15s;
+		}
+		a:hover {
+			color: $pink;
+		}
 	}
 	span.title {
 		text-transform: uppercase;
