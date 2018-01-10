@@ -56,7 +56,7 @@ div#about {
 	    -moz-transform: translateX(-50%);
 	    -webkit-transform: translateX(-50%);
 	    transform: translateX(-50%);
-		max-width: 550px;
+		max-width: 570px;
 		color: $grey;
 		font-size: 20px;
 		text-align: center;
@@ -425,6 +425,7 @@ div#projects {
 			display: inline-block;
 			margin-left: 15px;
 			margin-right: 15px;
+			pointer-events: none;
 		}
 		span.hdr {
 			font-family: 'Oswald', sans-serif;
@@ -449,6 +450,12 @@ div#projects {
 			font-family: 'Oswald', sans-serif;
 			font-size: 20px;
 			text-transform: uppercase;
+		}
+	}
+
+	@media (max-width: 549px) {
+		div.desktop-padding {
+			display: none;
 		}
 	}
 }
@@ -732,4 +739,8 @@ h2 {
 
 strong {
 	font-weight: 400;
+}
+
+video::-webkit-media-controls {
+	display: none;
 }

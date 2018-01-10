@@ -45,7 +45,7 @@ div#about p {
   -moz-transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  max-width: 550px;
+  max-width: 570px;
   color: #595959;
   font-size: 20px;
   text-align: center; }
@@ -354,7 +354,8 @@ div#projects div.project-exp {
     color: #CCCCCC;
     display: inline-block;
     margin-left: 15px;
-    margin-right: 15px; }
+    margin-right: 15px;
+    pointer-events: none; }
   div#projects div.project-exp span.hdr {
     font-family: 'Oswald', sans-serif;
     font-size: 30px;
@@ -375,6 +376,10 @@ div#projects div#project-grid {
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
     text-transform: uppercase; }
+
+@media (max-width: 549px) {
+  div#projects div.desktop-padding {
+    display: none; } }
 
 div.section {
   position: relative;
@@ -590,3 +595,6 @@ h2 {
 
 strong {
   font-weight: 400; }
+
+video::-webkit-media-controls {
+  display: none; }

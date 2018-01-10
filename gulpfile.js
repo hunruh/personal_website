@@ -7,6 +7,7 @@ var gulpif = require('gulp-if');
 var imagemin = require('gulp-imagemin');
 var runSequence = require('run-sequence');
 var sass = require('gulp-sass');
+var shell = require('gulp-shell');
 var uglify = require('gulp-uglify');
 var useref = require('gulp-useref');
 
@@ -54,17 +55,17 @@ gulp.task('resources', function() {
 })
 
 gulp.task('images', function(){
-	return gulp.src('src/imgs/**/*.+(png|jpg|gif|svg)')
+	return gulp.src('src/**/*.+(png|jpg|gif|svg|ico)')
 	.pipe(cache(imagemin({
     	interlaced: true
 	})))
-	.pipe(gulp.dest('dist/imgs'))
+	.pipe(gulp.dest('dist'))
 });
 
 gulp.task('useref', function(){
 	return gulp.src('src/*.html')
 		.pipe(useref())
-		.pipe(gulpif('*.js', uglify()))
+		.pipe(gulpif('*.js', uglify({preserveComments: 'license'})))
 		.pipe(gulpif('*.css', cssnano()))
 		.pipe(gulp.dest('dist'))
 });
@@ -83,3 +84,9 @@ gulp.task('build', function (callback) {
 		callback
 	)
 })
+
+// Server functions
+
+gulp.task('push', shell.task([
+  'gsutil -m rsync -R dist gs://www.hunruh.com'
+]))

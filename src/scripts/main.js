@@ -1,4 +1,4 @@
-//function thanks to: http://stackoverflow.com/questions/487073/check-if-element-is-visible-after-scrolling
+/*! isScrolledIntoView function thanks to: http://stackoverflow.com/questions/487073/check-if-element-is-visible-after-scrolling */
 function isScrolledIntoView(elem) {
     var doc_view_top = $(window).scrollTop();
     var doc_view_bottom = doc_view_top + $(window).height();
@@ -126,8 +126,16 @@ $(document).ready( function() {
 		$('.hamburger').removeClass('is-active');
 	});
 	$('.project').click(function() {
+		var offset = $('header').height();
+		if($(window).width() < 550) {
+			$('#nav-links').slideUp(200);
+			$('#watermark').slideDown(200);
+			offset = 60;
+		}
+
 		$('#project-grid').slideUp();
 		$('#' + $(this).data("id")).slideDown();
+		$('html,body').animate({scrollTop:$('#' + $(this).data("id")).offset().top - offset}, 'slow');
 	});
 	$('.return').click(function() {
 		$(this).parent().slideUp();
